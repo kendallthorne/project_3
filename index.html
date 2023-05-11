@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+
+  <!--   p5.js lib -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+
+  <!--     bootstrap style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!--   your style -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main role="main" class="container">
+    <h1>The Prevalance of Mental Heal Disorders</h1>
+    <p class="text-center">The following data was created by Kaggle user @amitd and was last updated in 2017.</p>
+    <br />
+
+    <!--     D3 VISUAL -->
+    <h3>Anual Percentage of People with Mental Health Disorders by Country</h3>
+    <p>To better understand the percents of populations with specific mental health disorders, the following chart was
+      created. It compares the percentage of the population of various countries with various mental health disorders
+      for the years 1990 - 2017. This chart can be used to examine both how the percentage of populations with mental
+      health disorders varies by country and also how the percentages vary with time. This chart shows that for each
+      mental health disorder examined, the percent of the population with each disorder is fairly similar across
+      countries. On the other hand, there is no clear trend across countries in annual change in the percent of the
+      population with each mental health disorder. The most prominent conclusion from this chart is that mental health
+      disorders are impacting populations globablly and in many countries, the percentage of the population with various
+      mental health disorders is increasing. The high global rates of anxiety and depression disorders are cause for
+      concern and require the recognition of the need for change to improve global mental health.</p>
+    <!-- <div id="info">
+      <div><span id="country">China</span></div>
+       <div><span id="bipolar">99%</span></div>
+    </div> -->
+
+    <!--https://blog.hubspot.com/website/html-dropdown is where I found the code for the drop down menu -->
+    <label for="year">Year:</label>
+    <select name="year" id="year">
+      <option value="1990">1990</option>
+      <option value="1995">1995</option>
+      <option value="2000">2000</option>
+      <option value="2005">2005</option>
+      <option value="2010">2010</option>
+      <option value="2015">2015</option>
+      <option value="2017">2017</option>
+    </select>
+
+    <div id="legend"></div>
+    <!-- <div id="d3Chart"> -->
+    <div id="myAxis"></div>
+    <div id="myChart" class="svg-container"></div>
+    <!-- </div> -->
+    <br />
+    <!--     P5 VISUAL -->
+    <h3> A Crowd of 200 and the Number of Those Individuals with Mental Health Disorders in the United States
+    </h3>
+    <p>To further contextualize the significance of the percentage of populations with specific mental health disorders,
+      the following visualization was created. It uses the data for the percentage of the population of the United
+      States of America with each mental health disorder in the year 2017. Using a population size of 200, the
+      visualization demonstrates how many of these 200 people suffered from each mental health disorder. While
+      percentages of the population less than 6% may seem inconsequential, the following visualization shows that these
+      percentages are far more significant than they may initially seem. It simulates how many people going about their
+      daily lives might be struggling with a mental health disorder. This reinforces the need to address the mental
+      health crisis in the United States and globally.</p>
+    <div id="dropDown"></div>
+    <div id="myP5"></div>
+  </main>
+
+
+  <!--   SCRIPTS -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <!--   your scripts -->
+  <script src="Person.js"></script>
+  <script src="p5_script.js"></script>
+  <script src="d3_script.js"></script>
+  <!-- <script src="d3_script_failure.js"></script> -->
+
+  <!--   bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
